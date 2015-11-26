@@ -1,0 +1,2 @@
+1. To provide VxLAN plugin in Dec 1, 2015.
+2. Multi-threads to config each physical device.

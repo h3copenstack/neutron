@@ -1,0 +1,14 @@
+# 0. Modify the ml2_conf_hp.ini file to fit your requirements.
+# 1. Add hp to ml2_conf.ini :
+#    mechanism_driver = openvswitch,hp
+# 2. Install HP driver:
+#    $ chmod +x setup.sh <MYSQL_ROOT_PASSWORD> <PYTHON VERSION>
+#    $ sudo ./setup.sh <MYSQL_ROOT_PASSWORD> <PYTHON VERSION>
+# 3. Restart neutron-server and append ml2_conf_hp.ini to it. 
+#    $ sudo /usr/bin/python /usr/bin/neutron-server \
+#            --config-file=/etc/neutron/plugins/ml2/ml2_conf.ini \ 
+#            --config-file=/etc/neutron/plugins/ml2/ml2_conf_hp.ini \
+#            --config-file=/etc/neutron/neutron.conf \
+#            --log-file=/var/log/neutron/neutron-server.log &
+#    
+
